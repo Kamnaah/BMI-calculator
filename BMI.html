@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI CALCULATOR</title>
+    <link rel="stylesheet" type="text/css"href="BMI.css"/>
+</head>
+<body>
+    <div>
+        <h1>BMI CALCULATOR</h1>
+        <P class="text">Weight in KG</P>
+        <input type="text" id="weight">
+        <p class="text">Height in Meters</p>
+        <input type="text" id="height">
+        <p id="result"></p>
+        <button id="btn" onClick="bmi()">CALCULATE</button>
+        <p style="color:black;">Healthy BMI range between 18.5-24.9.</p>
+    </div>
+    <script>
+        function bmi(){
+            let weight=document.getElementById("weight").value;
+            let height=document.getElementById("height").value;
+            if(height<=0 || weight<=0){
+                let bmi="INVALID INPUT";
+                document.getElementById("result").innerHTML =bmi;
+            }
+            else{
+            let bmi=(weight/height**2).toFixed(2);
+            document.getElementById("result").innerHTML ="your BMI is "+bmi;
+            }
+        }
+    </script>
+    
+</body>
+</html>

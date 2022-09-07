@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    width: 100%;
+    height: 100%;
+}
+body{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-family: sans-serif;
+    /* background-color: palevioletred; */
+    background-image: url(bg.jpg);
+    background-size: 50%;
+}
+div{
+    width: 35%;
+    height: 40%;
+    position: absolute;
+    top: 15%;
+    left:32%;
+    background:transparent;
+    color: darkcyan;
+}
+.text{
+    padding-top: 5%;
+    color:black;
+}
+#result{
+    padding-top: 5%;
+}
+#btn{
+    padding: 2%;
+    border-radius: 80%;
+    background-color: pink;
+    border-color: palevioletred;
+    color:#fff;
+    cursor: pointer;
+}
+#btn:hover{
+    background-color: white;
+    color: palevioletred;
+}
+input{
+    background-color:pink;
+    width: 60%;
+    height: 9%;
+}
+#result{
+    color:black;
+}
